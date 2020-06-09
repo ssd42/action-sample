@@ -1,0 +1,19 @@
+# action.yml
+name: 'Stevens GitHub Action'
+description: 'Simple Steven action'
+inputs:
+  language:
+    required: true
+    description: Programming language to run tests on
+  version:
+    required: true
+    description: Version of the language
+outputs:
+  steven-action-result:
+    description: a Short description of what happened
+branding:
+  color: purple
+  icon: credit-card
+runs:
+  using: 'node12'
+  main: './build/index.js'
