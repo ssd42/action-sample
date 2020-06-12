@@ -3,10 +3,10 @@ name: 'Stevens GitHub Action'
 description: 'Simple Steven action'
 inputs:
   language:
-    required: true
+    required: false
     description: Programming language to run tests on
   version:
-    required: true
+    required: false
     description: Version of the language
 outputs:
   steven-action-result:
@@ -16,4 +16,4 @@ branding:
   icon: credit-card
 runs:
   using: 'node12'
-  main: 'dist/index.js'
+  main: './dist/index.js'
